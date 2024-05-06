@@ -1,0 +1,327 @@
+.nav-bar {
+ background-color: #AE6147 ;
+ height: 6rem;
+ align-items: center;
+ display: flex;
+ width: fit-content; 
+ justify-content: space-evenly;
+ align-items: center;
+}
+.nav-bar .image img {
+    transition: transform 2s linear;
+    display: block; /* Ensures the image is centered correctly */
+}
+
+.nav-bar .image img:hover {
+    transform: rotate(360deg);
+}
+.image{
+    height: 10rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin-right: auto; /* Centering in the nav-bar */
+    margin-left: auto; /* Centering in the nav-bar */
+    margin-bottom: 10px;
+    object-fit: fill;
+    
+}
+    
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #986F37;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Updated to use rgba for shadow */
+    z-index: 1;
+    max-height: 200px; /* Set a fixed maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(-20px); /* Start slightly above */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for both properties */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1; /* Fade to fully visible */
+    transform: translateY(0); }/* Move to original position
+}
+.btn-content1{
+    display: flex;
+    gap: 3rem;
+    color: white;
+    
+} */
+.pictures {
+    position: relative;
+    text-align: center; /* Center the text over the image */
+}
+
+.pictures img {
+    width: 100%; /* Adjust as needed */
+    opacity: 0;
+    animation: fadeInImage 2s ease forwards; /* Animation for the image */
+}
+
+.pictures .animated-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust based on exact centering */
+    color: white; /* Text color */
+    font-size: 2rem; /* Adjust size as needed */
+    opacity: 0;
+    animation: slideInText 2s 1s ease forwards; /* Animation for the text, starts after 1s */
+}
+
+@keyframes fadeInImage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInText {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -100%); /* Start from above */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%); /* End at center */
+    }
+}
+
+.btn, .btn-content1 {
+    display: flex;
+    gap: 3rem;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    cursor: grabbing;
+}
+
+.btn {
+    justify-content: end;
+    align-items: end;
+    padding-left: 70rem; /* This seems excessively large, consider reducing if it's a mistake */
+}
+
+.btn:hover, .btn-content1:hover {
+    transform: scale(1.05); /* Slight increase in size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+#button1{
+    border-radius: 10px;
+    background-color: #538A9C;
+    color: white;
+    width: 140px;
+}
+
+
+#button2{
+    padding-right: 10rem;
+    background-color: #538A9C;
+    width: 15px;
+    color: white;
+    border-radius: 10px;
+    justify-content:flex-start;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.content1{
+    
+    font-style: Oriya MN;
+    /* border: #986F37; */
+    padding:0 20rem;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 2px;
+    width:20%;
+    text-align: center;
+}
+.content{
+    display: flex;
+    text-align: center;
+   
+    justify-content: center; 
+}
+
+#babita{
+    width: 20%;
+    height: 18%;
+    z-index: -1;
+    justify-content: center;
+    align-content: center;
+    
+    
+    
+}
+
+#gulam{
+    width: 20%;
+    height: 18%;
+}
+
+#tutu{
+    width: 20%;
+    height: 18%;
+}
+#rana{
+    width: 20%;
+    height: 18%;
+}
+
+.artist{
+    gap: 3 rem;
+    display: flex;
+    object-fit: cover;
+}
+
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-content: center;    
+    gap: 20rem; 
+    width:100%;
+    
+    
+}
+.artist img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.artist img:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0 0 15px rgba(165, 42, 42, 0.8); */
+}
+
+
+.artist-button {
+    display: flex; /* Make buttons block level for full width */
+    width: 100%; /* Full width to match container */
+    /* margin: 10px auto; Center align and add some margin */
+    padding: 1%; /* Padding for spacing inside the button */
+    text-align: center; /* Center the text inside the button */
+    background-color: #f0f0f0; /* Light grey background */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Shadow with slight transparency */
+    cursor:pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    justify-content: center;
+    align-items: center;
+    margin:  0px 20px;
+}
+
+.artist-button:hover {
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6); /* Darker and larger shadow on hover */
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+        @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.profile-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 20px;
+    margin-top: 10px;
+    animation: fadeIn 1s ease-out; /* Apply the animation */
+    cursor: pointer;
+}
+
+.profile-container img {
+    width: 80%; /* Adjusted size for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.profile-container p {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+}
+.close {
+    cursor: pointer; /* Changes cursor to a pointer when hovering over the close button */
+}
+
+.profile1-container img {
+    width: 80%; /* Adjusted size for the image */
+    height: 100%; /* Maintain aspect ratio */
+    margin-right: 20px;
+    cursor: pointer;
+}
+.profile1-container p {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+}
+
+.design-Img{
+    margin-right: 80rem;
+    rotate: 75deg;
+    margin-top: 0;
+    padding: 0px 0px;
+    width: 700px;
+}
+.hr{
+    display: flex;
+width: 307.052px;
+height: 41px;
+transform: rotate(0.987deg);
+flex-direction: column;
+justify-content: flex-end;
+flex-shrink: 0;
+color: #F5EDE3;
+
+text-align: center;
+font-family: "Oriya MN";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 48px */
+letter-spacing: -0.736px;
+}
+h4 {
+    color: #000; /* Set the text color to black or any other color you prefer */
+    text-shadow: 2px 2px 4px #b0e0e6; /* Ice blue color shadow */
+}
+ .para {
+    background-color: #538A9C; /* Sets the background color to blue */
+    color: white; /* Sets the text color to white for better contrast */
+    padding: 0px; /* Adds padding inside the box */
+    margin: 0px 0; /* Adds vertical spacing around the box */
+    border-radius: 5px; /* Optional: rounds the corners of the box */
+    width: 60%;
+    height: 60%; /* Sets the width of the box */
+    position: absolute; /* Positions the element absolutely relative to its nearest positioned ancestor */
+    top: 220%; /* Positions the element at the top of its container */
+    left: 50%; /* Centers the element horizontally */
+    transform: translateX(-50%);
+    font-size:larger; /* Corrects the horizontal position due to the width */
+    justify-content: right;
+    margin-left: 20rem;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10rem;
+} 
+
+.hr {
+    text-align: center; /* Center the text inside the div */
+    margin-top: 70px; /* Pushes the div 50 pixels down from its original position */
+    /* Adjust the 50px to whatever distance you need */
+}
