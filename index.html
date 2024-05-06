@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icons8-moon-50.png">
+    <title>Noor-e-kaari</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body> 
+    
+    <div class="nav-bar">
+        <div class="image">
+            <img src="images/Artboard 3.png">
+        </div>
+        <div class="dropdown">
+            <div class="dropdown-content"></div>
+            <label for="shops">Shop</label>
+            <select name="shop" id="shop">
+              <option value="artist">artist</option>
+              <option value="contact">Contact</option>
+              <option value="email">Email</option>
+            </select>     
+        </div>
+        <div class="btn">
+            <h3>Explore</h3>
+            <div class="btn-content1">
+                <button id="button1"><h3> Join the community</h3></button>
+                <button id="button2"><h3>Login</h3></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="pictures">
+        <img src="images/Group 228.png">
+    </div> -->
+
+    <div class="pictures">
+    <img src="images/Group 228.png" alt="Decorative Image">
+    <span class="animated-text">NOOR-E-KAARI</span>
+</div>
+
+    <div class="content">
+        <div class="content1"><h2>DASTAAN-E-KARIGAAR</h2></div>
+        
+    </div>
+    <div class="artist">
+        <img src="images/Vector.png" id="babita">
+        <img src="images/hjb.png" id="gulam">
+        <img src="images/sdds.png" id="tutu">
+        <img src="images/da.png" id="rana">
+    </div>
+    <!-- <div class="name">
+        <div class="btn-content">
+            <button id="babita"><p id="babita">MS. Babita Aggarwal</p></button>
+            <button id="gulam"><p id="babita">MS. Babita Aggarwal</p></button>
+            <button id="tutu"><p id="babita">MS. Babita Aggarwal</p></button>
+            <button id="rana"><p id="babita">MS. Babita Aggarwal</p></button>
+         </div> -->
+    <!-- </div> -->
+
+    <!-- <div class="name">
+        <!-- <button class="artist-button" id="button-babita"><p>MS. Babita Aggarwal</p></button> -->
+        <!-- <button class="artist-button" id="button-gulam"><p>Mr. Ghulam Abbas</p></button>
+        <button class="artist-button" id="button-tutu"><p>Mrs. Tarannum Tauheed</p></button>
+        <button class="artist-button" id="button-rana"><p>Mrs. Rana Ahmad</p></button> -->
+    </div> -
+       <style>
+        /* Style for the modal */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="name">
+        <button class="artist-button" id="button-babita" onclick="openModal('modal-babita')"><p>Ms. Babita Aggarwal</p></button>
+        <button class="artist-button" id="button-ghulam" onclick="openModal('modal-ghulam')"><p>Mr. Ghulam Abbas</p></button>
+        <button class="artist-button" id="button-tutu" onclick="openModal('modal-tutu')"><p>Mrs. Tarannum Tauheed</p></button>
+        <button class="artist-button" id="button-rana" onclick="openModal('modal-rana')"><p>Mrs. Rana Ahmad</p></button>
+        
+        <!-- Modal for Babita Aggarwal -->
+        <div id="modal-babita" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-babita')">&times;</span>
+                <div class="profile-container">
+                    <img src="babi.png" alt="Babita Aggarwal">
+                    <p>In a quaint village, the extraordinary Babita Agarwal defied norms and pursued  her passion for crafts long before marriage. After tying the knot, her love for crafts  flourished, and she saw an opportunity to empower struggling artisans. With boundless  determination, she founded “Aasha Mahila Bal Kalyan,” becoming a beacon of hope  for over 3000 artists seeking recognition. When COVID struck, Babita adapted, shifting her focus to crafting home clinic items  with her skilled team. Surprisingly, her success lay in crafting unique pieces based on  demand, rather than flashy packaging. She streamlined operations and embraced a  “learning by doing” approach, fostering her artistic growth. Beyond crafting, Babita forged deep emotional connections with customers, making  her NGO shine. Her efforts uplifted the entire town, inspiring aspiring entrepreneurs and artists. Babita’s tale continues  to weave empowerment and prosperity, one stitch at a time</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Ghulam Abbas -->
+        <div id="modal-ghulam" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-ghulam')">&times;</span>
+                <div class="profile1-container">
+                    <img src="guju.png" alt="Ghulam Abbas">
+                    <p>Meet Ghulam Abbas, a highly skilled and experienced Chikankari artisan whose craft  has been a treasured legacy passed down through generations in his family. Drawing  inspiration from his father, a national award winner in 1968, Ghulam Abbas has  embraced the art of Chikankari with profound passion and dedication. Currently residing in the charming neighborhood of Ghasmandi Dhaal in Lucknow,  Ghulam Abbas shares his life with his beloved wife, Sabina, and their two children.  His journey into the world of Chikankari began at a tender age of 10, where he was  immersed in the rich cultural surroundings that celebrated this exquisite craft. Over  the span of more than 45 years, he has honed his skills, becoming a true master in  his craft. Ghulam Abbas’s artistic prowess has led him to partake in various notable events, with the Golden Eye Project in 1984-85  being a standout moment. Additionally, he has represented the art of Chikankari on the international stage, participating  in fairs and events abroad. The Dubai Shopping Festival in 1996-97, the Demonstration in India High Commission, Abu  Dhabi in 1997, and The Great India Festival in Taipei, Taiwan, showcased his exceptional talent to a global audience. An expert in 26 different stitches of Chikankari, Ghulam Abbas has ventured beyond traditional applications, introducing  innovative ideas that have earned him immense acclaim. One of his most unique creations was adorning holi caps with  his craft, featuring a special motif of an elephant playing holi. The caps became an instant hit among the Marathi people,  as the designs of elephants and mangoes hold special significance in their culture. With deep wisdom gained over years of experience, Ghulam Abbas emphasizes that mastering the art of Chikankari  requires at least two decades of dedicated practice. His expertise has been acknowledged and appreciated by various  educational institutions, and he has been associated with prestigious institutions like NIFT Mumbai</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Tarannum Tauheed -->
+        <div id="modal-tutu" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-tutu')">&times;</span>
+                <div class="profile1-container">
+                    <img src="tauji.png" alt="Tarannum Tauheed">
+                    <p>Meet Tarannum Tauheed, a talented artisan who has transformed her passion for  Chikankari into a thriving entrepreneurial venture. With three years of dedicated  business experience, she follows in the footsteps of her mother and sisters, hailing  from the renowned Kakori village, known for its skilled practitioners of this craft. Driven by a desire to forge her own path, Tarannum embarked on this artistic  journey, and though she feels she has achieved much, she envisions reaching even  greater heights in the future. With over 25 years of hands-on expertise in Chikankari,  she possesses a deep understanding of the craft, which proved instrumental in  establishing her own brand. From the intricacies of embroidery to the meticulous details of packaging, Tarannum  and her team handle every aspect of their business. Her dedication and skill have  brought immense success, with orders pouring in from overseas clients in remarkably little time. Maintaining a simple  website managed by her son, she efficiently handles customer inquiries and orders through this platform. Tarannum’s commitment to her craft is evident in every facet of her work, including the careful curation of her unique  wooden blocks, featuring her exclusive designs. Primarily catering to wholesale retailers, she also owns a charming  boutique where her craftsmanship takes center stage. Quality is of utmost importance to Tarannum, and she goes to great lengths to ensure the proper storage of her exquisite  creations. With a keen eye for detail, she keeps her products in immaculate conditions, employing red chillies and golis  to protect them from any unwanted insects. Tarannum’s artistic prowess has earned her collaborations with renowned personalities such as designer Anil Bhandari  and the esteemed singer Kanika Kapoor. Her journey as an artisan turned entrepreneur is a testament to the power  of passion, dedication, and innovation, and she continues to make a mark in the world of Chikankari with her artistic  brilliance</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Rana Ahmad -->
+        <div id="modal-rana" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-rana')">&times;</span>
+                <div class="profile1-container">
+                    <img src="ranaji.png" alt="Rana Ahmad">
+                    <p>Meet Rana Ahmed, an exceptionally skilled artisan hailing from the vibrant streets of  Fatehganj Galla Mandi in Lucknow. With an impressive experience of over 35 years  in her craft, she is truly a master of her art. Notably, Rana Ahmed holds a degree in  Home Science, reflecting her dedication to her passion and pursuit of excellence. Rana draws her inspiration from a remarkable source - her mother, who was a gold  medallist in her own right. Growing up in the beautiful city of Kanpur, Rana shared  her childhood with four sisters and two brothers, where creativity and craftsmanship  were nurtured from an early age. At the tender age of 10, Rana embarked on her journey into the world of artistry,  guided by a friend of her sister. From that moment, her skills began to blossom,  and there was no looking back. Even after her marriage in 1993, Rana continued to pursue her craft with unwavering  determination, proving that her passion knew no bounds. Determined to continually improve her craft, she is always seeking ways to enhance her skills. Her dedication is evident  in every creation she brings to life. Not content with merely perfecting her art, she also takes the initiative to make her  own cotton thread, showcasing her commitment to producing high-quality work. Beyond her individual achievements, Rana is passionate about empowering others through her craft. As a testament to her  benevolence, she runs training centres not only within the bustling city of Lucknow but also in the surrounding villages.  Through these initiatives, she imparts her knowledge and expertise, shaping the artisans of tomorrow and preserving the  rich heritage of Chikankari. Rana Ahmed’s journey is a testament to the power of determination and the love for one’s craft. With every stitch she  weaves, she adds to the timeless legacy of Chikankari, leaving an indelible mark on the world of traditional Indian  craftsmanship</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to open a modal
+        function openModal(modalId) {
+            // Close all open modals first
+            var modals = document.querySelectorAll('.modal');
+            modals.forEach(function(modal) {
+                modal.style.display = 'none';
+            });
+
+            // Open the specified modal
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+        }
+
+        // Function to close a modal
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "none";
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+            }
+        }
+    </script>
+    <div class="design-Img">
+        <img src="syy.png"> 
+    </div>
+    <div class="hr">
+        <h4>AWADH - E - KAARI</h4>
+    </div>
+    <div class="para">
+        <p> Chikankari is a traditional embroidery style that originated in the city of Lucknow, India and flourished  under the patronage of the rulers of Awadh. The Nawabs of Awadh manufactured the exquisite textiles  in Lucknow. Later when the capital of Awadh shifted to Lucknow from Faizabad, in the year 1722, the  knowledge of the craft came to Lucknow. It is renowned for its delicate and intricate white threadwork on  fine muslin fabric, creating beautiful patterns and designs.
+
+            The word “Chikan” steps from a Persian word derived from “Chic”, which referred to the “Jali” work done  on marble or wood. It is also famous as “shadow work” or “white embroidery work”. Some claim that  Chikan appears to have been derived from the Persian word “chikin” or “chakin”, which means making  delicate pattern over fabrics or cloth wrought with needlework.
+            
+            According to Laila Tyabji, Chikankari stems from the white-on-white embroidery of Shiraz came to India as  part of a culture of Persian nobles at the Mughal court. There were chikankaars , artisans who practiced  in the courts of Kolkata, Delhi, Dhaka (Bangladesh), Gaya, Varanasi, Allahabad, Rampur and Bhopal. In  Lucknow, the Nawabs of Awadh made the finely embroidered muslins a prescribed requirement of the  ceremonial court.</p>
+        </div></p>
+    </div> 
+   
+
+</body>
+<script src="index.js"></script>
+</html>
